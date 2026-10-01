@@ -43,10 +43,11 @@ const organizations = [
     {
         id: "03",
         role: "Badan Eksekutif Mahasiswa (BEM)",
+        periodEn: "October - November 2025",
         roleEn: "Student Executive Board (BEM)",
         name: "Staff Minat Bakat Departemen Pengembangan Kapasitas Mahasiswa BEM FASILKOM",
         nameEn: "Staff, Talent and Interests Division, Student Capacity Development Department, BEM FASILKOM",
-        period: "202",
+        period: "Oktober - November 2025",
         tags: ["Networking", "Communication", "Event Planning"],
         description: "Staff Acara Leadership Training Program dengan tema Katalisator Aksi: Gerakan Gagasan, Wujudkan Perubahan pada tanggal 14 - 15 November 2025: menyusun rundown, merancang games yang efektif, membantu persiapan teknis sebelum acara, serta mendukung koordinasi dan kelancaran pelaksanaan kegiatan yang berjumlah 90 peserta.",
         descriptionEn: "Served as Event Staff for the Leadership Training Program with the theme Katalisator Aksi: Gerakan Gagasan, Wujudkan Perubahan on November 14 - 15, 2025. Prepared the event rundown, designed effective games, assisted with technical preparations, and supported coordination and smooth event execution for 90 participants.",
@@ -170,5 +171,6 @@ export default function OrganizationSection() {
         </section>
     );
 }
+
 
 
