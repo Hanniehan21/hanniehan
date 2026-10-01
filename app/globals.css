@@ -1,26 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;1,300&display=swap");
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #050505;
+  --bg-card: #111111;
+  --bg-card-hover: #181818;
+  --text: #ffffff;
+  --text-muted: #9ca3af;
+  --text-subtle: #6b7280;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(127, 255, 212, 0.5);
+  --accent: #7fffd4;
+  --accent-glow: rgba(127, 255, 212, 0.15);
+  --navbar-bg: rgba(0, 0, 0, 0.8);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+:root.light {
+  --bg: #f0eeff;
+  --bg-card: #faf9ff;
+  --bg-card-hover: #f3f0ff;
+  --text: #1e1b4b;
+  --text-muted: #4c4780;
+  --text-subtle: #7c78a8;
+  --border: rgba(109, 100, 193, 0.15);
+  --border-hover: rgba(124, 110, 220, 0.5);
+  --accent: #7c6ee0;
+  --accent-glow: rgba(124, 110, 224, 0.15);
+  --navbar-bg: rgba(240, 238, 255, 0.9);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Syne", sans-serif;
+  overflow-x: hidden;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 10px;
 }
