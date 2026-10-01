@@ -114,7 +114,37 @@ export default function ProjectSection() {
                 </p>
             </div>
         </div>
-        {/* Audio Checker Item */}
+                  {/* Microsoft Power BI Bootcamp Mentor Item */}
+          <div className="group relative pb-16 transition-all duration-500" style={{ borderBottom: "1px solid var(--border)" }}>
+              <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+                  <div className="space-y-2">
+                      <h3 className="text-4xl md:text-5xl font-black transition-colors uppercase italic tracking-tighter" style={{ color: "var(--text)" }}>
+                          Microsoft Power BI Bootcamp Mentor
+                      </h3>
+                      <p className="text-[#7FFFD4] font-mono text-sm md:text-base uppercase tracking-[0.3em] opacity-90">
+                          OUSEAN DIGITAL SCHOOL
+                      </p>
+                  </div>
+
+                  <div className="flex flex-col md:items-end gap-3">
+                      <span className="px-3 py-1 border border-[#7FFFD4]/40 rounded-full text-[#7FFFD4] font-mono text-xs uppercase tracking-widest bg-[#7FFFD4]/5">
+                          Mentor
+                      </span>
+                      <span className="text-gray-500 font-mono text-sm uppercase tracking-widest">
+                          {language === "en" ? "June 2026 — Present" : "Juni 2026 — Sekarang"}
+                      </span>
+                  </div>
+              </div>
+
+              <div className="max-w-5xl">
+                  <p className="text-base md:text-lg leading-relaxed font-light italic opacity-70 group-hover:opacity-100 transition-all duration-700 pl-8" style={{ color: "var(--text-muted)", borderLeft: "2px solid var(--border)" }}>
+                      {language === "en"
+                          ? "Served as a mentor for the Microsoft Power BI Bootcamp at Ousean Digital School using a hands-on learning approach. Guided participants through data analysis and dashboard development using Microsoft Power BI through practical materials, dataset-based exercises, and ongoing learning support."
+                          : "Berperan sebagai mentor dalam Microsoft Power BI Bootcamp di Ousean Digital School dengan pendekatan hands-on learning. Membantu peserta memahami proses analisis data dan pengembangan dashboard menggunakan Microsoft Power BI melalui materi praktis, latihan berbasis dataset, serta pendampingan selama proses pembelajaran."}
+                  </p>
+              </div>
+          </div>
+{/* Audio Checker Item */}
         <div className="group relative pb-16 transition-all duration-500" style={{ borderBottom: "1px solid var(--border)" }}>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
                 <div className="space-y-2">
@@ -309,6 +339,7 @@ export default function ProjectSection() {
         </section>
     );
 }
+
 
 
 
