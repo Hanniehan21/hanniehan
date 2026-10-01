@@ -1,19 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Navbar() {
     const { isDark, setIsDark } = useTheme();
+    const { language, setLanguage } = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('home');
 
     const menuItems = [
-        { name: 'HOME', id: 'home' },
-        { name: 'ABOUT', id: 'about' },
-        { name: 'PROJECTS', id: 'projects' },
-        { name: 'ORGANIZATION', id: 'organization' },
-        { name: 'CERTIFICATE', id: 'certificates' },
-    ];
+    {
+        name: language === 'id' ? 'HOME' : 'HOME',
+        id: 'home'
+    },
+    {
+        name: language === 'id' ? 'TENTANG' : 'ABOUT',
+        id: 'about'
+    },
+    {
+        name: language === 'id' ? 'PROYEK' : 'PROJECTS',
+        id: 'projects'
+    },
+    {
+        name: language === 'id' ? 'ORGANISASI' : 'ORGANIZATION',
+        id: 'organization'
+    },
+    {
+        name: language === 'id' ? 'SERTIFIKAT' : 'CERTIFICATE',
+        id: 'certificates'
+    },
+];
 
     useEffect(() => {
         const observerOptions = {
@@ -110,6 +127,43 @@ export default function Navbar() {
                         style={{ backgroundColor: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)' }}
                     />
 
+                    {/* Language Toggle */}
+                    <div
+                        className="flex items-center gap-1 px-2 h-10 rounded-full"
+                        style={{
+                            border: '1px solid ' + accentColor + '55',
+                            backgroundColor: accentColor + '10'
+                        }}
+                    >
+                        <button
+                            onClick={() => setLanguage('id')}
+                            className="px-2 py-1 text-[10px] font-mono font-bold rounded-full transition-all duration-200"
+                            style={{
+                                backgroundColor: language === 'id' ? accentColor + '30' : 'transparent',
+                                color: language === 'id' ? accentColor : (isDark ? '#9ca3af' : '#475569')
+                            }}
+                        >
+                            ID
+                        </button>
+
+                        <span
+                            className="text-[9px] font-mono opacity-40"
+                        >
+                            /
+                        </span>
+
+                        <button
+                            onClick={() => setLanguage('en')}
+                            className="px-2 py-1 text-[10px] font-mono font-bold rounded-full transition-all duration-200"
+                            style={{
+                                backgroundColor: language === 'en' ? accentColor + '30' : 'transparent',
+                                color: language === 'en' ? accentColor : (isDark ? '#9ca3af' : '#475569')
+                            }}
+                        >
+                            EN
+                        </button>
+                    </div>
+
                     {/* Theme Toggle */}
                     <button
                         onClick={() => setIsDark(!isDark)}
@@ -201,8 +255,42 @@ export default function Navbar() {
                                 >
                                     FIRNANDA AMALIA
                                 </p>
-                                <button
-                                    onClick={() => setIsDark(!isDark)}
+                                <div className="flex items-center gap-2">
+                                    {/* Language Toggle */}
+                                    <div
+                                        className="flex items-center gap-1 px-2 h-9 rounded-full"
+                                        style={{
+                                            border: '1px solid ' + accentColor + '55',
+                                            backgroundColor: accentColor + '10'
+                                        }}
+                                    >
+                                        <button
+                                            onClick={() => setLanguage('id')}
+                                            className="px-1.5 py-1 text-[9px] font-mono font-bold rounded-full transition-all duration-200"
+                                            style={{
+                                                backgroundColor: language === 'id' ? accentColor + '30' : 'transparent',
+                                                color: language === 'id' ? accentColor : (isDark ? '#9ca3af' : '#475569')
+                                            }}
+                                        >
+                                            ID
+                                        </button>
+
+                                        <span className="text-[8px] font-mono opacity-40">/</span>
+
+                                        <button
+                                            onClick={() => setLanguage('en')}
+                                            className="px-1.5 py-1 text-[9px] font-mono font-bold rounded-full transition-all duration-200"
+                                            style={{
+                                                backgroundColor: language === 'en' ? accentColor + '30' : 'transparent',
+                                                color: language === 'en' ? accentColor : (isDark ? '#9ca3af' : '#475569')
+                                            }}
+                                        >
+                                            EN
+                                        </button>
+                                    </div>
+
+                                    <button
+                                        onClick={() => setIsDark(!isDark)}
                                     className="w-9 h-9 rounded-full flex items-center justify-center transition-all duration-300"
                                     style={{
                                         border: '1px solid ' + accentColor + '55',
@@ -210,8 +298,9 @@ export default function Navbar() {
                                         color: accentColor
                                     }}
                                 >
-                                    <ThemeToggleIcon size={15} />
-                                </button>
+                                        <ThemeToggleIcon size={15} />
+                                    </button>
+                                </div>
                             </div>
                         </motion.div>
                     </>
@@ -220,3 +309,6 @@ export default function Navbar() {
         </>
     );
 }
+
+
+

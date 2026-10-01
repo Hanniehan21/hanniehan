@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../context/ThemeContext';
+import { useLanguage } from '../../context/LanguageContext';
 import { motion } from 'framer-motion';
 
 const certificates = [
@@ -52,6 +53,7 @@ const certificates = [
 
 export default function CertificateSection() {
     const { isDark } = useTheme();
+    const { language } = useLanguage();
     return (
         <section id="certificates" className="py-32 px-6 bg-transparent relative overflow-hidden">
             {/* Background Glow */}
@@ -70,7 +72,7 @@ export default function CertificateSection() {
                         </h2>
                     </div>
                     <p className="text-gray-500 font-mono text-[11px] max-w-[280px] leading-relaxed uppercase tracking-wider italic border-l border-white/10 pl-6">
-                        "A collection of verified skills and academic milestones."
+                        {language === "en" ? "A collection of verified skills and academic milestones." : "Kumpulan keterampilan terverifikasi dan pencapaian akademik."}
                     </p>
                 </div>
 
@@ -130,3 +132,4 @@ export default function CertificateSection() {
         </section>
     );
 }
+

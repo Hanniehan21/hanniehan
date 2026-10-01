@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React, {
     useRef,
@@ -32,6 +32,9 @@ import {
     useTheme,
 } from "../context/ThemeContext";
 
+import { LanguageProvider } from "../context/LanguageContext";
+import { useLanguage } from "../context/LanguageContext";
+
 import AboutSection from "../components/sections/AboutSection";
 import ProjectSection from "../components/sections/ProjectSection";
 import OrganizationSection from "../components/sections/OrganizationSection";
@@ -46,6 +49,7 @@ import ProfileCard from "../components/ProfileCard";
 
 function WelcomeInner() {
     const { isDark } = useTheme();
+    const { language } = useLanguage();
 
     return (
         <div
@@ -195,7 +199,7 @@ function WelcomeInner() {
                                         uppercase
                                     "
                                 >
-                                    SCROLL TO DECODE MY JOURNEY
+                                    {language === "id" ? "GULIR UNTUK MENELUSURI PERJALANAN SAYA" : "SCROLL TO DECODE MY JOURNEY"}
                                 </p>
                             </div>
                         </div>
@@ -245,8 +249,10 @@ function WelcomeInner() {
 export default function Welcome() {
     return (
         <ThemeProvider>
-            <WelcomeInner />
-        </ThemeProvider>
+    <LanguageProvider>
+        <WelcomeInner />
+    </LanguageProvider>
+</ThemeProvider>
     );
 }
 
@@ -1030,3 +1036,8 @@ const TypewriterText = ({
         </span>
     );
 };
+
+
+
+
+
