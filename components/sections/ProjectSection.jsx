@@ -114,12 +114,12 @@ export default function ProjectSection() {
                 </p>
             </div>
         </div>
-                  {/* Microsoft Power BI Bootcamp Mentor Item */}
+                  {/* Power BI Bootcamp Mentor Item */}
           <div className="group relative pb-16 transition-all duration-500" style={{ borderBottom: "1px solid var(--border)" }}>
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
                   <div className="space-y-2">
                       <h3 className="text-4xl md:text-5xl font-black transition-colors uppercase italic tracking-tighter" style={{ color: "var(--text)" }}>
-                          Microsoft Power BI Bootcamp Mentor
+                          Power BI Bootcamp Mentor
                       </h3>
                       <p className="text-[#7FFFD4] font-mono text-sm md:text-base uppercase tracking-[0.3em] opacity-90">
                           OUSEAN DIGITAL SCHOOL
@@ -339,6 +339,7 @@ export default function ProjectSection() {
         </section>
     );
 }
+
 
 
 
