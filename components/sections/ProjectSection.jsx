@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTheme } from '../../context/ThemeContext';
 import { motion, AnimatePresence } from 'framer-motion';
-import { projects } from '@/Components/data/projects';
+import { projects } from '../data/projects';
 
 export default function ProjectSection() {
     const { isDark } = useTheme();
