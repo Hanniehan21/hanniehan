@@ -294,7 +294,26 @@ export default function ProjectSection() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                         <div className="p-8 rounded-[40px] bg-red-500/[0.03] border border-red-500/10 space-y-4">
                                             <h4 className="text-red-400 font-mono text-xs uppercase tracking-[0.2em] flex items-center gap-3">
-                                                <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" /> {language === "en" ? "The Challenge" : "Tantangan"}
+                                                {selectedProject.link && (
+    <div className="flex justify-end mb-10">
+        <a
+            href={selectedProject.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-5 py-3 rounded-full font-mono text-[10px] uppercase tracking-[0.2em] transition-all hover:scale-105"
+            style={{
+                color: "var(--accent)",
+                border: "1px solid var(--accent)",
+                backgroundColor: "var(--accent-glow)"
+            }}
+        >
+            {language === "en" ? "VIEW LIVE PROJECT" : "LIHAT PROJECT"}
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M7 17l10-10M7 7h10v10" />
+            </svg>
+        </a>
+    </div>
+)}<span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" /> {language === "en" ? "The Challenge" : "Tantangan"}
                                             </h4>
                                             <p className="text-white/80 text-lg leading-relaxed italic font-light">"{getText(selectedProject, 'challenge')}"</p>
                                         </div>
@@ -339,6 +358,7 @@ export default function ProjectSection() {
         </section>
     );
 }
+
 
 
 

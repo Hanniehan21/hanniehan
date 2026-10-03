@@ -47,6 +47,63 @@ export const projects = [
     },
 
     {
+        id: "06",
+        title: "TrafficSaaS - SEO Analytics Dashboard",
+        titleEn: "TrafficSaaS - SEO Analytics Dashboard",
+
+        category: "Data Analytics // SEO // Web Analytics",
+        categoryEn: "Data Analytics // SEO // Web Analytics",
+
+        date: "2026",
+        dateEn: "2026",
+
+        desc: "Pengembangan dashboard Web Analytics berbasis SaaS yang mengintegrasikan Google Search Console dan Google Analytics 4 untuk analisis performa website.",
+        descEn: "Developed a SaaS-based Web Analytics dashboard integrating Google Search Console and Google Analytics 4 for website performance analysis.",
+
+        fullDesc:
+            "Mengembangkan TrafficSaaS sebagai Dashboard Web Analytics berbasis SaaS untuk mengintegrasikan data Google Search Console dan Google Analytics 4 dalam satu platform analitik terpadu. Sistem memanfaatkan Google Cloud Platform dan OAuth 2.0 untuk menghubungkan layanan Google, kemudian mengambil, memvalidasi, mengolah, dan menggabungkan data performa pencarian serta perilaku pengguna sebelum disajikan melalui dashboard analytics. Platform ini dirancang untuk mendukung monitoring, evaluasi performa website, analisis SEO, dan pengambilan keputusan berbasis data.",
+        fullDescEn:
+            "Developed TrafficSaaS as a SaaS-based Web Analytics Dashboard to integrate Google Search Console and Google Analytics 4 into a unified analytics platform. The system uses Google Cloud Platform and OAuth 2.0 to connect with Google services, then retrieves, validates, processes, and combines search performance and user behavior data before presenting them through the analytics dashboard. The platform was designed to support website monitoring, performance evaluation, SEO analysis, and data-driven decision-making.",
+
+        challenge:
+            "Data performa website tersebar pada Google Search Console dan Google Analytics 4 dengan struktur serta fokus analisis yang berbeda. Pengguna perlu berpindah antar platform, menyesuaikan periode data, serta menggabungkan dan menginterpretasikan informasi secara manual untuk memperoleh gambaran performa website secara menyeluruh.",
+        challengeEn:
+            "Website performance data was spread across Google Search Console and Google Analytics 4, with different data structures and analytical perspectives. Users had to switch between platforms, align reporting periods, and manually combine and interpret the information to obtain a comprehensive view of website performance.",
+
+        solution:
+            "Mengembangkan TrafficSaaS dengan integrasi Google Search Console API dan Google Analytics Data API melalui OAuth 2.0 dan Google Cloud Platform. Data diambil secara otomatis, diproses melalui validasi, transformasi, penggabungan, dan agregasi, kemudian dikelola dalam PostgreSQL dan disajikan melalui KPI, grafik, tabel, serta tren performa dalam satu dashboard analytics.",
+        solutionEn:
+            "Developed TrafficSaaS by integrating Google Search Console API and Google Analytics Data API through OAuth 2.0 and Google Cloud Platform. Data is retrieved automatically, processed through validation, transformation, combination, and aggregation, then managed in PostgreSQL and presented through KPIs, charts, tables, and performance trends in a unified analytics dashboard.",
+
+        achievements: [
+            "API Integration: Berhasil mengintegrasikan Google Search Console API dan Google Analytics Data API (GA4) ke dalam satu sistem analitik terpusat.",
+            "Unified Analytics: Menggabungkan data performa pencarian dan perilaku pengguna untuk memberikan gambaran website yang lebih menyeluruh.",
+            "Dashboard Analytics: Menyajikan KPI, ringkasan pertumbuhan, SEO Health Score, Performance Overview, serta tren performa dalam satu dashboard.",
+            "Automated Data Processing: Mengotomatisasi proses pengambilan, validasi, pengolahan, dan penyajian data dari layanan Google."
+        ],
+
+        achievementsEn: [
+            "API Integration: Successfully integrated Google Search Console API and Google Analytics Data API (GA4) into a centralized analytics system.",
+            "Unified Analytics: Combined search performance and user behavior data to provide a more comprehensive view of website performance.",
+            "Dashboard Analytics: Presented KPIs, growth summaries, SEO Health Score, Performance Overview, and performance trends in a unified dashboard.",
+            "Automated Data Processing: Automated data retrieval, validation, processing, and presentation from Google services."
+        ],
+
+        tech: [
+            "Next.js",
+            "Google Search Console API",
+            "Google Analytics Data API",
+            "Google OAuth 2.0",
+            "Google Cloud Platform",
+            "PostgreSQL",
+            "Prisma ORM"
+        ],
+
+        image: "/img/traffic-saas.png",
+        link: "https://traffic-saas-woad.vercel.app/en",
+        accent: "#00FFFF"
+    },
+    {
         id: "02",
 
         title: "FMCG Sales Analysis Dashboard",
@@ -248,3 +305,6 @@ export const projects = [
         accent: "#7B2FFF",
     },
 ];
+
+
+
