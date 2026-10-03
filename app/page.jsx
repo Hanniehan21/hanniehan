@@ -221,7 +221,7 @@ function WelcomeInner() {
                                     name="FIRNANDA AMALIA"
                                     title="Profile Card"
                                     handle="+62 853-1157-2582"
-                                    avatarUrl="/img/cantik.jpeg"
+                                    avatarUrl="/img/ipusnas.jpeg"
                                     onContactClick={() =>
                                         window.open(
                                             "https://www.linkedin.com/in/firnandaamalia",
