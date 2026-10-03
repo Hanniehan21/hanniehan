@@ -36,6 +36,7 @@ import { LanguageProvider } from "../context/LanguageContext";
 import { useLanguage } from "../context/LanguageContext";
 
 import AboutSection from "../components/sections/AboutSection";
+import BrandSection from "../components/sections/BrandSection";
 import ProjectSection from "../components/sections/ProjectSection";
 import OrganizationSection from "../components/sections/OrganizationSection";
 import CertificateSection from "../components/sections/CertificateSection";
@@ -238,6 +239,7 @@ function WelcomeInner() {
                     OTHER PORTFOLIO SECTIONS
                 ================================================== */}
                 <AboutSection />
+            <BrandSection />
                 <ProjectSection />
                 <OrganizationSection />
                 <CertificateSection />
@@ -1036,6 +1038,7 @@ const TypewriterText = ({
         </span>
     );
 };
+
 
 
 
