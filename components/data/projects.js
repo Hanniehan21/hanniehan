@@ -147,7 +147,7 @@ export const projects = [
         ],
 
         tech: ["SQL", "Looker Studio", "Excel", "Power Query"],
-        image: "/img/KarirNex.jpeg",
+        image: "/img/karirnex.jpeg",
         file: "/doc/Portofolio Bootcamp Data Analyst Firnanda Amalia.pdf",
         accent: "#00FFFF",
     },
@@ -305,6 +305,7 @@ export const projects = [
         accent: "#7B2FFF",
     },
 ];
+
 
 
 
