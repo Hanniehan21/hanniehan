@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import { useTheme } from "../../context/ThemeContext";
@@ -137,56 +137,26 @@ export default function AboutSection() {
                                 style={{ color: "var(--text-muted)" }}
                             >
                                 {isEnglish ? (
-                                    <p>
-                                        I am{" "}
-                                        <span
-                                            className="font-medium"
-                                            style={{ color: "var(--text)" }}
-                                        >
-                                            Firnanda Amalia
-                                        </span>
-                                        , an Information Systems student focused on{" "}
-                                        <span style={{ color: "var(--text)" }}>
-                                            Data Analysis, UI/UX Design,
-                                        </span>{" "}
-                                        and{" "}
-                                        <span style={{ color: "var(--text)" }}>
-                                            Business Intelligence
-                                        </span>
-                                        . I have experience in data processing,
-                                        interactive visualization, and user-centered
-                                        interface design. I am accustomed to turning
-                                        raw data into structured insights and
-                                        designing digital solutions that improve
-                                        usability and support data-driven
-                                        decision-making.
-                                    </p>
-                                ) : (
-                                    <p>
-                                        Saya{" "}
-                                        <span
-                                            className="font-medium"
-                                            style={{ color: "var(--text)" }}
-                                        >
-                                            Firnanda Amalia
-                                        </span>
-                                        , mahasiswi Sistem Informasi yang berfokus pada{" "}
-                                        <span style={{ color: "var(--text)" }}>
-                                            Data Analysis, UI/UX design,
-                                        </span>{" "}
-                                        dan{" "}
-                                        <span style={{ color: "var(--text)" }}>
-                                            Business Intelligence
-                                        </span>{" "}
-                                        dengan pengalaman dalam pengolahan data,
-                                        visualisasi interaktif, serta perancangan
-                                        antarmuka berbasis user-centered design.
-                                        Terbiasa mengubah data mentah menjadi insight
-                                        terstruktur dan merancang solusi digital yang
-                                        meningkatkan usability serta mendukung
-                                        pengambilan keputusan berbasis data.
-                                    </p>
-                                )}
+    <p>
+        <span
+            className="font-medium"
+            style={{ color: "var(--text)" }}
+        >
+            Firnanda Amalia
+        </span>
+        {" "}is an Information Systems student at Universitas Esa Unggul with an interest in Data Analysis and Business Intelligence. She completed an internship at PT Gaivo Solusi Manajemen, where she worked on website analytics and digital marketing. She also works as a Power BI Bootcamp Mentor and has experience in data entry and audio quality checking. Through campus organizations and event committees, she has developed teamwork and coordination skills. Her technical skills include SQL, Excel, Power BI, Tableau, Looker Studio, Google Search Console, and Google Analytics 4. She continues to develop her skills in data analysis and business intelligence.
+    </p>
+) : (
+    <p>
+        <span
+            className="font-medium"
+            style={{ color: "var(--text)" }}
+        >
+            Firnanda Amalia
+        </span>
+        {" "}adalah mahasiswi Sistem Informasi di Universitas Esa Unggul yang memiliki ketertarikan pada Data Analysis dan Business Intelligence. Ia telah menyelesaikan internship di PT Gaivo Solusi Manajemen, dengan pengalaman dalam website analytics dan digital marketing. Ia juga menjadi Power BI Bootcamp Mentor serta memiliki pengalaman dalam data entry dan audio quality checking. Melalui organisasi dan kepanitiaan kampus, ia mengembangkan kemampuan teamwork dan coordination. Keterampilan teknisnya meliputi SQL, Excel, Power BI, Tableau, Looker Studio, Google Search Console, dan Google Analytics 4. Ia terus mengembangkan kemampuan dalam data analysis dan business intelligence.
+    </p>
+)}
                             </div>
                         </motion.div>
 
@@ -320,3 +290,5 @@ export default function AboutSection() {
         </section>
     );
 }
+
+
