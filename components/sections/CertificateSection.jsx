@@ -49,6 +49,20 @@ const certificates = [
         link: "https://drive.google.com/file/d/1_Aa6-bFERojOh4edYSB-wSAnUTUSdZpd/view?usp=sharing",
         tags: ["SQL", "Python for Data Analysis", "Data Visualization", "Google Looker Studio", "Dashboard Development"],
     },
+    
+    {
+        id: "06",
+        title: "Sertifikat Staff Minat Bakat BEM FASILKOM",
+        issuer: "BEM FASILKOM — Universitas Esa Unggul",
+        date: "Periode 2024/2025",
+        image: "/doc/SERTIFIKAT_STAFF_MINAT_BAKAT_BEM_FASILKOM.jpeg",
+        link: "/doc/SERTIFIKAT_STAFF_MINAT_BAKAT_BEM_FASILKOM.jpeg",
+        tags: [
+            "Student Organization",
+            "Organizational Involvement",
+            "BEM FASILKOM"
+        ],
+    },
 ];
 
 export default function CertificateSection() {

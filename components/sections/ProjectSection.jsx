@@ -144,6 +144,52 @@ export default function ProjectSection() {
                   </p>
               </div>
           </div>
+          
+{/* Tangerang International Development Seminar Item */}
+<div
+    className="group relative pb-16 transition-all duration-500"
+    style={{ borderBottom: "1px solid var(--border)" }}
+>
+    <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
+        <div className="space-y-2">
+            <h3
+                className="text-4xl md:text-5xl font-black transition-colors uppercase italic tracking-tighter"
+                style={{ color: "var(--text)" }}
+            >
+                PIC Souvenir &amp; Crowd Control
+            </h3>
+
+            <p className="text-[#7FFFD4] font-mono text-sm md:text-base uppercase tracking-[0.3em] opacity-90">
+                Tangerang International Development Seminar 2026 — Tangerang, Indonesia
+            </p>
+        </div>
+
+        <div className="flex flex-col md:items-end gap-3">
+            <span className="px-3 py-1 border border-[#7FFFD4]/40 rounded-full text-[#7FFFD4] font-mono text-xs uppercase tracking-widest bg-[#7FFFD4]/5">
+                Volunteer
+            </span>
+
+            <span className="text-gray-500 font-mono text-sm uppercase tracking-widest">
+                {language === "en" ? "25 May 2026" : "25 Mei 2026"}
+            </span>
+        </div>
+    </div>
+
+    <div className="max-w-5xl">
+        <p
+            className="text-base md:text-lg leading-relaxed font-light italic opacity-70 group-hover:opacity-100 transition-all duration-700 pl-8"
+            style={{
+                color: "var(--text-muted)",
+                borderLeft: "2px solid var(--border)"
+            }}
+        >
+            {language === "en"
+                ? "Served as the Souvenir & Crowd Control PIC at the Tangerang International Development Seminar 2026. Coordinated the movement of hundreds of participants between rooms through a busy bazaar area, delivered five-minute reminders to help participants return in line with the event rundown, and prepared and handed souvenirs to speakers and moderators after their sessions."
+                : "Bertugas sebagai PIC Souvenir & Crowd Control dalam Tangerang International Development Seminar 2026. Mengoordinasikan mobilisasi ratusan peserta antarruangan melalui area bazar yang padat, menyampaikan pengingat lima menit sebelum sesi dimulai agar peserta kembali sesuai rundown, serta menyiapkan dan menyerahkan cendera mata kepada pembicara dan moderator setelah sesi selesai."}
+        </p>
+    </div>
+</div>
+
 {/* Audio Checker Item */}
         <div className="group relative pb-16 transition-all duration-500" style={{ borderBottom: "1px solid var(--border)" }}>
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
