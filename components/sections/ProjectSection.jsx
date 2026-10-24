@@ -207,7 +207,7 @@ export default function ProjectSection() {
                         Freelance
                     </span>
                     <span className="text-gray-500 font-mono text-sm uppercase tracking-widest">
-                        {language === "en" ? "April 2026 — Present" : "April 2026 — Sekarang"}
+                        {language === "en" ? "April 2026 — Present" : "April 2026"}
                     </span>
                 </div>
             </div>
