@@ -63,6 +63,21 @@ const certificates = [
             "BEM FASILKOM"
         ],
     },
+    
+{
+    id: "07",
+    title: "Sertifikat Penyelesaian Program Magang",
+    issuer: "PT Gaivo Solusi Manajemen",
+    date: "2 Februari - 12 Juli 2026",
+    image: "/doc/SERTIFIKAT_MAGANG_GAIVO.jpg",
+    link: "/doc/SERTIFIKAT_MAGANG_GAIVO.jpg",
+    tags: [
+        "Internship",
+        "Professional Experience",
+        "Workplace Learning"
+    ],
+},
+
 ];
 
 export default function CertificateSection() {
